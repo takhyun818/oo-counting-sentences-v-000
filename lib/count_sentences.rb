@@ -1,4 +1,4 @@
-
+require 'pry'
 
 class String
 
@@ -17,8 +17,8 @@ class String
   end
 
   def count_sentences
-    self.split(/[!?.+]/).count do |s:
-      s != " "
+    self.split(/[!?.+]/).count do |x|
+      x != ""
     end
   end
 end
